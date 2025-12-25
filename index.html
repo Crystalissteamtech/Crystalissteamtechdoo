@@ -10,7 +10,7 @@
     <style>
         /* Osnovne postavke */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             color: #333;
             margin: 0;
@@ -19,25 +19,34 @@
 
         /* Header sekcija */
         header {
-            background-color: #003366;
-            color: white;
-            padding: 20px 0;
+            background-color: #003366; /* Teget pozadina */
+            color: white; /* Beli tekst */
+            padding: 40px 0;
             text-align: center;
         }
 
         /* Naslovi */
         h1, h2 {
-            color: #003366;
+            color: #ff6600; /* Naglašeni naslovi u narandžastoj boji */
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 28px;
         }
 
         /* Glavna sekcija */
         main {
-            padding: 40px 20px;
-            text-align: center;
+            padding: 60px 20px;
+            text-align: left;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         p {
             color: #666;
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         /* Usługi */
@@ -48,18 +57,22 @@
 
         li {
             background-color: #eeeeee;
-            margin: 10px 0;
-            padding: 10px;
+            margin: 20px 0;
+            padding: 20px;
             border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        /* Slike */
         .service-image {
             width: 100%;
-            max-width: 600px;
-            margin: 20px auto;
+            max-width: 1200px;
+            height: auto;
+            margin: 40px auto;
             display: block;
         }
 
+        /* Sekcija o iskustvu */
         .experience-section {
             background-color: #003366;
             color: white;
@@ -69,6 +82,10 @@
 
         .experience-section h2 {
             color: #ff6600;
+        }
+
+        .experience-section p {
+            font-size: 18px;
         }
 
         /* Footer */
@@ -81,13 +98,12 @@
 
         /* Linkovi */
         a {
-            color: #003366;
+            color: #ff6600;
             text-decoration: none;
         }
 
         a:hover {
-            color: #ff6600;
-            transition: color 0.3s ease;
+            color: #ff3333;
         }
 
         /* Kontakt formular */
@@ -108,11 +124,29 @@
             border: 1px solid #ccc;
         }
 
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff6600;
+        }
+
         /* Responsivnost */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 24px;
             }
+
             main {
                 padding: 20px;
             }
@@ -124,7 +158,7 @@
 <!-- Header sekcija -->
 <header>
     <h1>Crystalis Steam Tech</h1>
-    <p>Industrijsko dubinsko čišćenje - Kvalitet i pouzdanost za vaša preduzeća</p>
+    <p>Profesionalno industrijsko dubinsko čišćenje</p>
 </header>
 
 <!-- Sekcija o iskustvu -->
@@ -138,48 +172,20 @@
 
 <!-- Glavna sekcija -->
 <main>
-    <h2>Naše usluge</h2>
+    <h2>Industrijsko dubinsko čišćenje</h2>
+    <p>Naša firma specijalizovana je za industrijsko dubinsko čišćenje, koristeći najmoderniju opremu i tehnologiju. Naši profesionalni **parni čistači** marke **Biemedue** i **Steam Italy** omogućavaju efikasno čišćenje i dezinfekciju velikih površina i mašina.</p>
+    
+    <p><strong>Usluge koje obuhvataju industrijsko čišćenje:</strong></p>
     <ul>
-        <li><strong>Industrijsko dubinsko čišćenje</strong>
-            <p>Specijalizovani smo za čišćenje industrijskih objekata koristeći profesionalne parne čistače **Biemedue** i **Steam Italy**. Naše usluge obuhvataju čišćenje CNC mašina, proizvodnih linija, hala, ugostiteljskih kuhinja i hotelskih prostora. Naša oprema omogućava dubinsko čišćenje velikih površina bez štetnih hemikalija, uz minimalne zastoje u radu.</p>
-        </li>
-        <li><strong>Dubinsko čišćenje tepiha, nameštaja i vozila</strong>
-            <p>Za sve privatne korisnike nudimo klasično dubinsko čišćenje tepiha, nameštaja i vozila. Cene za ove usluge počinju od:
-                <ul>
-                    <li><strong>Tepisi:</strong> od 1000 RSD za manji tepih.</li>
-                    <li><strong>Vozila:</strong> od 2000 RSD za unutrašnje i spoljašnje pranje.</li>
-                    <li><strong>Nameštaj:</strong> od 1500 RSD za dubinsko čišćenje sofe.</li>
-                </ul>
-                Kontaktirajte nas za tačnu ponudu.
-            </p>
-        </li>
+        <li><strong>Pranje CNC mašina</strong> - dubinsko čišćenje opreme i mašina u proizvodnim pogonima, čišćenje precision alatnih mašina.</li>
+        <li><strong>Čišćenje proizvodnih linija</strong> - uklanjanje prljavštine, masti i otpadaka sa linija za proizvodnju i montažu.</li>
+        <li><strong>Čišćenje ugostiteljskih kuhinja</strong> - dubinsko čišćenje i dezinfekcija ugostiteljskih objekata, kuhinjskih uređaja i radnih površina.</li>
+        <li><strong>Čišćenje hotelskih prostora</strong> - čišćenje hotelskih soba, hodnika, i zajedničkih prostorija.</li>
+        <li><strong>Čišćenje industrijskih hala</strong> - čišćenje i dezinfekcija velikih skladišta, hala i drugih industrijskih objekata.</li>
     </ul>
 
+    <p><strong>Naši uređaji: **Biemedue** i **Steam Italy**:</strong></p>
+    <p>Koristimo parne čistače **Biemedue** i **Steam Italy** koji omogućavaju temeljno čišćenje bez upotrebe agresivnih hemikalija. Ovi uređaji koriste **visok pritisak pare** za efikasno uklanjanje prljavštine i bakterija, čineći ih idealnim za industrijsko čišćenje, kao i za čišćenje preciznih mašina i opreme.</p>
+    
     <!-- Slika usluge -->
-    <img src="https://via.placeholder.com/600x400?text=Industrijsko+čišćenje+mašine" alt="Industrijsko čišćenje" class="service-image">
-</main>
-
-<!-- Kontakt sekcija -->
-<main>
-    <h2>Kontaktirajte nas</h2>
-    <form action="your_server_script" method="POST">
-        <label for="name">Ime:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Poruka:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <input type="submit" value="Pošaljite">
-    </form>
-</main>
-
-<!-- Footer sekcija -->
-<footer>
-    <p>&copy; 2025 Crystalis Steam Tech | Sva prava zadržana</p>
-</footer>
-
-</body>
-</html>
+    <img
