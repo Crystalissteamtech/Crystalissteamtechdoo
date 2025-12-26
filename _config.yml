@@ -1,0 +1,21 @@
+# Jekyll Configuration for GitHub Pages
+title: Crystalis Steam Tech
+description: Profesionalno industrijsko dubinsko čišćenje
+# url: "https://crystalissteamtech.github.io"
+# baseurl: "/Crystalissteamtechdoo"
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Include files
+include:
+  - _pages

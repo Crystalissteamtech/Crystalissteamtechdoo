@@ -1,191 +1,116 @@
-<!DOCTYPE html>
-<html lang="sr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Profesionalno industrijsko dubinsko čišćenje za fabrike, ugostiteljske objekte, i više.">
-    <meta name="keywords" content="industrijsko čišćenje, dubinsko čišćenje, pranje CNC mašina, ugostiteljske kuhinje, parni čistači">
-    <meta name="author" content="Crystalis Steam Tech">
-    <title>Crystalis Steam Tech</title>
-    <style>
-        /* Osnovne postavke */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+---
+layout: default
+title: Početna
+description: Profesionalno industrijsko dubinsko čišćenje vrhunskom opremom
+---
 
-        /* Header sekcija */
-        header {
-            background-color: #003366; /* Teget pozadina */
-            color: white; /* Beli tekst */
-            padding: 40px 0;
-            text-align: center;
-        }
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Crystalis Steam Tech</h1>
+        <p class="hero-subtitle">Profesionalno industrijsko dubinsko čišćenje vrhunskom opremom i dugogodišnjim iskustvom</p>
+        <a href="{{ '/contact.html' | relative_url }}" class="cta-button">Kontaktirajte nas</a>
+    </div>
+</section>
 
-        /* Naslovi */
-        h1, h2 {
-            color: #ff6600; /* Naglašeni naslovi u narandžastoj boji */
-            font-weight: bold;
-        }
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="stats-container">
+        <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Godina iskustva</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Zadovoljnih klijenata</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Dostupnost</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Profesionalnost</div>
+        </div>
+    </div>
+</section>
 
-        h2 {
-            font-size: 28px;
-        }
-
-        /* Glavna sekcija */
-        main {
-            padding: 60px 20px;
-            text-align: left;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        p {
-            color: #666;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        /* Usługi */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            background-color: #eeeeee;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Slike */
-        .service-image {
-            width: 100%;
-            max-width: 1200px;
-            height: auto;
-            margin: 40px auto;
-            display: block;
-        }
-
-        /* Sekcija o iskustvu */
-        .experience-section {
-            background-color: #003366;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .experience-section h2 {
-            color: #ff6600;
-        }
-
-        .experience-section p {
-            font-size: 18px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #000000;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        /* Linkovi */
-        a {
-            color: #ff6600;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #ff3333;
-        }
-
-        /* Kontakt formular */
-        form {
-            max-width: 600px;
-            margin: 20px auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        label, input, textarea {
-            width: 100%;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        input[type="submit"] {
-            background-color: #003366;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #ff6600;
-        }
-
-        /* Responsivnost */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 24px;
-            }
-
-            main {
-                padding: 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<!-- Header sekcija -->
-<header>
-    <h1>Crystalis Steam Tech</h1>
-    <p>Profesionalno industrijsko dubinsko čišćenje</p>
-</header>
-
-<!-- Sekcija o iskustvu -->
-<div class="experience-section">
-    <h2>Zašto nas odabrati?</h2>
-    <p><strong>Dugogodišnje iskustvo:</strong> Bavimo se industrijskim dubinskim čišćenjem već dugi niz godina i iza nas je veliki broj zadovoljnih klijenata.</p>
-    <p><strong>Visoka profesionalnost:</strong> Naš tim je visokospecijalizovan i obučen za rad sa profesionalnim industrijskim mašinama kao što su **Biemedue** i **Steam Italy**.</p>
-    <p><strong>Fleksibilnost rada:</strong> Razumemo važnost minimaliziranja zastoja u vašem poslovanju, zato nudimo mogućnost noćnog čišćenja i fleksibilnog vremena rada.</p>
-    <p><strong>Zadovoljni klijenti:</strong> Naša usluga je prepoznata od strane mnogih preduzeća u industrijama kao što su ugostiteljstvo, proizvodnja, i komercijalni sektor.</p>
+<!-- Services Preview -->
+<div class="container">
+    <section>
+        <div class="section-header">
+            <h2 class="section-title">Naše usluge</h2>
+            <p class="section-subtitle">Specijalizovani smo za industrijsko dubinsko čišćenje koristeći najmoderniju opremu i tehnologiju</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-content">
+                    <h3>🔧 Pranje CNC mašina</h3>
+                    <p>Dubinsko čišćenje opreme i mašina u proizvodnim pogonima sa pažnjom na precizne komponente.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <h3>🏭 Čišćenje proizvodnih linija</h3>
+                    <p>Profesionalno uklanjanje prljavštine, masti i otpadaka sa proizvodnih i montažnih prostora.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <h3>🍽️ Čišćenje ugostiteljskih kuhinja</h3>
+                    <p>Dubinsko čišćenje i dezinfekcija u skladu sa najvišim higijenskim standardima.</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="{{ '/services.html' | relative_url }}" class="cta-button">Pogledajte sve usluge</a>
+        </div>
+    </section>
 </div>
 
-<!-- Glavna sekcija -->
-<main>
-    <h2>Industrijsko dubinsko čišćenje</h2>
-    <p>Naša firma specijalizovana je za industrijsko dubinsko čišćenje, koristeći najmoderniju opremu i tehnologiju. Naši profesionalni **parni čistači** marke **Biemedue** i **Steam Italy** omogućavaju efikasno čišćenje i dezinfekciju velikih površina i mašina.</p>
-    
-    <p><strong>Usluge koje obuhvataju industrijsko čišćenje:</strong></p>
-    <ul>
-        <li><strong>Pranje CNC mašina</strong> - dubinsko čišćenje opreme i mašina u proizvodnim pogonima, čišćenje precision alatnih mašina.</li>
-        <li><strong>Čišćenje proizvodnih linija</strong> - uklanjanje prljavštine, masti i otpadaka sa linija za proizvodnju i montažu.</li>
-        <li><strong>Čišćenje ugostiteljskih kuhinja</strong> - dubinsko čišćenje i dezinfekcija ugostiteljskih objekata, kuhinjskih uređaja i radnih površina.</li>
-        <li><strong>Čišćenje hotelskih prostora</strong> - čišćenje hotelskih soba, hodnika, i zajedničkih prostorija.</li>
-        <li><strong>Čišćenje industrijskih hala</strong> - čišćenje i dezinfekcija velikih skladišta, hala i drugih industrijskih objekata.</li>
-    </ul>
+<!-- Equipment Section -->
+<section class="equipment-section">
+    <div class="equipment-content">
+        <h2>Profesionalna oprema svetske klase</h2>
+        <p>Koristimo parne čistače Biemedue i Steam Italy koji omogućavaju temeljno čišćenje bez upotrebe agresivnih hemikalija. Ovi uređaji koriste paru visokog pritiska za efikasno uklanjanje prljavštine i bakterija, čineći ih idealnim za industrijsko čišćenje, kao i za čišćenje preciznih mašina i opreme.</p>
+        <div class="equipment-brands">
+            <div class="brand">⚡ BIEMEDUE</div>
+            <div class="brand">🔥 STEAM ITALY</div>
+        </div>
+    </div>
+</section>
 
-    <p><strong>Naši uređaji: **Biemedue** i **Steam Italy**:</strong></p>
-    <p>Koristimo parne čistače **Biemedue** i **Steam Italy** koji omogućavaju temeljno čišćenje bez upotrebe agresivnih hemikalija. Ovi uređaji koriste **visok pritisak pare** za efikasno uklanjanje prljavštine i bakterija, čineći ih idealnim za industrijsko čišćenje, kao i za čišćenje preciznih mašina i opreme.</p>
-    
-    <!-- Slika usluge -->
-    <img
+<!-- Why Choose Us Preview -->
+<div class="container">
+    <section>
+        <div class="section-header">
+            <h2 class="section-title">Zašto nas odabrati?</h2>
+            <p class="section-subtitle">Pružamo vrhunske usluge industrijskog čišćenja sa dugogodišnjim iskustvom i najsavremenijom opremom</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon">🏆</div>
+                <h3>Dugogodišnje iskustvo</h3>
+                <p>Bavimo se industrijskim dubinskim čišćenjem već dugi niz godina i iza nas je veliki broj zadovoljnih klijenata.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">⚙️</div>
+                <h3>Vrhunska oprema</h3>
+                <p>Koristimo najsavremeniju profesionalnu opremu brendova Biemedue i Steam Italy za maksimalnu efikasnost.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">👥</div>
+                <h3>Stručan tim</h3>
+                <p>Naš tim je visokospecijalizovan i obučen za rad sa profesionalnim industrijskim mašinama.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🕐</div>
+                <h3>Fleksibilno vreme</h3>
+                <p>Nudimo noćno čišćenje i prilagođavanje vašim potrebama uz minimalnu disrupciju poslovanja.</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="{{ '/about.html' | relative_url }}" class="cta-button">Saznajte više o nama</a>
+        </div>
+    </section>
+</div>
